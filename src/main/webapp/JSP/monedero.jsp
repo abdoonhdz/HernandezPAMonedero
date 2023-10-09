@@ -25,9 +25,9 @@
 
     // Verificar si el número del precio es mayor que el número entregado
     if (precio > entregado) {
-        // Caso en el que el precio es mayor que la cantidad entregada (no se hace nada en este caso)
+        respuesta = "No tienes fondos suficiente";
     } else if (precio == entregado) {
-        // Caso en el que el precio es igual a la cantidad entregada (no se hace nada en este caso)
+        respuesta = "Precio justo";
     } else {
 %>
         <div class="container">
@@ -59,7 +59,6 @@
     }
     if (respuesta.length() > 0) {
 %>
-        <h2>Cambio: <%= cambio %></h2>
         <p><%= respuesta %></p>
 <%
     }
